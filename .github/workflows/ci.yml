@@ -38,8 +38,10 @@ jobs:
         run: |
           test -z "$(gofmt -l $(git ls-files '*.go'))"
 
-      - name: Build daemon
-        run: go build -o /tmp/nstchain-ci ./cmd/kava
+      - name: Build linux/amd64 daemon
+        run: |
+          make build-linux CMD=kava
+          ./out/linux/nstchain version --long
 
       - name: Run unit smoke tests
         run: go test -count=1 ./app ./client/rest ./x/evmutil ./x/evmutil/migrations/v2
