@@ -64,7 +64,11 @@ var (
 	defaultInitialHeight int64 = 1
 )
 
-const TestChainId = "kavatest_2221-1"
+const (
+	TestChainId = "kavatest_2221-1"
+	// TestBondDenom is the staking and savings denom used by the test app.
+	TestBondDenom = "unst"
+)
 
 // TestApp is a simple wrapper around an App. It exposes internal keepers for use in integration tests.
 // This file also contains test helpers. Ideally they would be in separate package.
@@ -174,7 +178,7 @@ func GenesisStateWithSingleValidator(
 	balances := []banktypes.Balance{
 		{
 			Address: acc.GetAddress().String(),
-			Coins:   sdk.NewCoins(sdk.NewCoin("ukava", sdkmath.NewInt(100000000000000))),
+			Coins:   sdk.NewCoins(sdk.NewCoin(TestBondDenom, sdkmath.NewInt(100000000000000))),
 		},
 	}
 
@@ -237,7 +241,7 @@ func genesisStateWithValSet(
 	}
 	// set validators and delegations
 	currentStakingGenesis := stakingtypes.GetGenesisStateFromAppState(app.appCodec, genesisState)
-	currentStakingGenesis.Params.BondDenom = "ukava"
+	currentStakingGenesis.Params.BondDenom = TestBondDenom
 
 	stakingGenesis := stakingtypes.NewGenesisState(
 		currentStakingGenesis.Params,
@@ -257,13 +261,13 @@ func genesisStateWithValSet(
 
 	for range delegations {
 		// add delegated tokens to total supply
-		totalSupply = totalSupply.Add(sdk.NewCoin("ukava", bondAmt))
+		totalSupply = totalSupply.Add(sdk.NewCoin(TestBondDenom, bondAmt))
 	}
 
 	// add bonded amount to bonded pool module account
 	balances = append(balances, banktypes.Balance{
 		Address: authtypes.NewModuleAddress(stakingtypes.BondedPoolName).String(),
-		Coins:   sdk.Coins{sdk.NewCoin("ukava", bondAmt)},
+		Coins:   sdk.Coins{sdk.NewCoin(TestBondDenom, bondAmt)},
 	})
 
 	bankGenesis := banktypes.NewGenesisState(

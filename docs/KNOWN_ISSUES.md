@@ -6,13 +6,12 @@ until they are fixed.
 
 ## Test-suite rebrand debt
 
-- `x/evmutil/...` now uses the `nst` prefix and the `anst` EVM denom; the full
-  package tree runs in the CI gate.
-- `x/earn` tests still use `ukava` while the local test app configures `uist`;
-  `go test ./x/earn/...` fails with `invalid deposit denom`.
-- The current CI gate runs `./app`, `./client/rest`, and `./x/evmutil/...`.
-  Expand it as packages are repaired. Do not delete failing tests or mark them
-  skipped to make the gate green.
+- `x/evmutil/...` and `x/earn/...` now use the `nst` prefix and the `unst`
+  staking/savings denom; both package trees run in the CI gate.
+- The test app's default bond denom is `app.TestBondDenom` (`unst`).
+- The current CI gate runs `./app`, `./client/rest`, `./x/evmutil/...`, and
+  `./x/earn/...`. Expand it as packages are repaired. Do not delete failing
+  tests or mark them skipped to make the gate green.
 
 ## EVM fork mismatch
 

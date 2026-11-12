@@ -38,7 +38,7 @@ func (suite *invariantTestSuite) SetupValidState() {
 		sdk.MustNewDecFromStr("100"),
 	))
 	suite.Keeper.SetVaultRecord(suite.Ctx, types.NewVaultRecord(
-		"ukava",
+		"unst",
 		sdk.MustNewDecFromStr("250.123456"),
 	))
 
@@ -46,14 +46,14 @@ func (suite *invariantTestSuite) SetupValidState() {
 		suite.addrs[0],
 		types.NewVaultShares(
 			types.NewVaultShare("usdx", sdk.MustNewDecFromStr("50")),
-			types.NewVaultShare("ukava", sdk.MustNewDecFromStr("105.123")),
+			types.NewVaultShare("unst", sdk.MustNewDecFromStr("105.123")),
 		),
 	)
 	vaultShare2 := types.NewVaultShareRecord(
 		suite.addrs[1],
 		types.NewVaultShares(
 			types.NewVaultShare("usdx", sdk.MustNewDecFromStr("50")),
-			types.NewVaultShare("ukava", sdk.MustNewDecFromStr("145.000456")),
+			types.NewVaultShare("unst", sdk.MustNewDecFromStr("145.000456")),
 		),
 	)
 
@@ -137,8 +137,8 @@ func (suite *invariantTestSuite) TestShareRecordsInvariant() {
 		suite.addrs[0],
 		// Directly create vaultshares instead of NewVaultShares() to avoid sanitization
 		types.VaultShares{
-			types.NewVaultShare("ukava", sdk.MustNewDecFromStr("50")),
-			types.NewVaultShare("ukava", sdk.MustNewDecFromStr("105.123")),
+			types.NewVaultShare("unst", sdk.MustNewDecFromStr("50")),
+			types.NewVaultShare("unst", sdk.MustNewDecFromStr("105.123")),
 		},
 	))
 	message, broken = suite.runInvariant("share-records", keeper.ShareRecordsInvariant)

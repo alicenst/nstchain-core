@@ -33,9 +33,9 @@ import (
 )
 
 var TestBkavaDenoms = []string{
-	"bkava-kavavaloper15gqc744d05xacn4n6w2furuads9fu4pqn6zxlu",
-	"bkava-kavavaloper15qdefkmwswysgg4qxgqpqr35k3m49pkx8yhpte",
-	"bkava-kavavaloper1ypjp0m04pyp73hwgtc0dgkx0e9rrydeckewa42",
+	"bkava-nstvaloper15gqc744d05xacn4n6w2furuads9fu4pqrhl2la",
+	"bkava-nstvaloper15qdefkmwswysgg4qxgqpqr35k3m49pkxhf2dtc",
+	"bkava-nstvaloper1ypjp0m04pyp73hwgtc0dgkx0e9rrydecx5n34t",
 }
 
 // Suite implements a test suite for the earn module integration tests

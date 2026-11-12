@@ -29,7 +29,7 @@ func TestVaultRecordValidate(t *testing.T) {
 					TotalShares: types.NewVaultShare("usdx", sdk.NewDec(0)),
 				},
 				{
-					TotalShares: types.NewVaultShare("ukava", sdk.NewDec(5)),
+					TotalShares: types.NewVaultShare("unst", sdk.NewDec(5)),
 				},
 			},
 			errArgs: errArgs{
@@ -117,7 +117,7 @@ func TestVaultShareRecordsValidate(t *testing.T) {
 					Depositor: addrs[1],
 					Shares: types.NewVaultShares(
 						types.NewVaultShare("usdx", sdk.NewDec(0)),
-						types.NewVaultShare("ukava", sdk.NewDec(5)),
+						types.NewVaultShare("unst", sdk.NewDec(5)),
 					),
 				},
 			},
@@ -138,7 +138,7 @@ func TestVaultShareRecordsValidate(t *testing.T) {
 					Depositor: addrs[0],
 					Shares: types.NewVaultShares(
 						types.NewVaultShare("usdx", sdk.NewDec(0)),
-						types.NewVaultShare("ukava", sdk.NewDec(5)),
+						types.NewVaultShare("unst", sdk.NewDec(5)),
 					),
 				},
 			},
@@ -377,7 +377,7 @@ func TestNewVaultShareRecord(t *testing.T) {
 
 	shares := types.NewVaultShares(
 		types.NewVaultShare("usdx", sdk.NewDec(0)),
-		types.NewVaultShare("ukava", sdk.NewDec(5)),
+		types.NewVaultShare("unst", sdk.NewDec(5)),
 	)
 
 	shareRecord := types.NewVaultShareRecord(addrs[0], shares)

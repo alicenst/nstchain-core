@@ -12,7 +12,7 @@ import (
 	"github.com/stretchr/testify/suite"
 )
 
-const savingsVaultDenom = "ukava"
+const savingsVaultDenom = "unst"
 
 type strategySavingsTestSuite struct {
 	testutil.Suite
@@ -284,7 +284,7 @@ func (suite *strategySavingsTestSuite) TestWithdraw_WithAccumulatedSavings() {
 		"account should be deleted when all shares withdrawn but has %s value still",
 		accValue,
 	)
-	suite.Require().Equal("account vault share record for ukava not found", err.Error())
+	suite.Require().Equal("account vault share record for unst not found", err.Error())
 }
 
 func (suite *strategySavingsTestSuite) TestAccountShares() {
