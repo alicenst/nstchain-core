@@ -34,7 +34,7 @@ Where proposal.json contains:
   "description": "Pay many users some KAVA!",
   "recipient_list": [
 		{
-			"address": "kava1mz2003lathm95n5vnlthmtfvrzrjkrr53j4464",
+			"address": "nst1mz2003lathm95n5vnlthmtfvrzrjkrr5dqpsqt",
 			"amount": [
 				{
 					"denom": "ukava",
@@ -43,7 +43,7 @@ Where proposal.json contains:
 			]
 		},
 		{
-			"address": "kava1zqezafa0luyetvtj8j67g336vaqtuudnsjq7vm",
+			"address": "nst1zqezafa0luyetvtj8j67g336vaqtuudnvq5mk9",
 			"amount": [
 				{
 					"denom": "ukava",

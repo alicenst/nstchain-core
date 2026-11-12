@@ -159,7 +159,12 @@ func (app *App) AppCodec() codec.Codec {
 func GenesisStateWithSingleValidator(
 	app *TestApp,
 	genesisState GenesisState,
+	bondDenomArg ...string,
 ) GenesisState {
+	bondDenom := "ukava"
+	if len(bondDenomArg) > 0 {
+		bondDenom = bondDenomArg[0]
+	}
 	privVal := mock.NewPV()
 	pubKey, err := privVal.GetPubKey()
 	if err != nil {
@@ -178,11 +183,11 @@ func GenesisStateWithSingleValidator(
 	balances := []banktypes.Balance{
 		{
 			Address: acc.GetAddress().String(),
-			Coins:   sdk.NewCoins(sdk.NewCoin(TestBondDenom, sdkmath.NewInt(100000000000000))),
+			Coins:   sdk.NewCoins(sdk.NewCoin(bondDenom, sdkmath.NewInt(100000000000000))),
 		},
 	}
 
-	return genesisStateWithValSet(app, genesisState, valSet, []authtypes.GenesisAccount{acc}, balances...)
+	return genesisStateWithValSet(app, genesisState, valSet, []authtypes.GenesisAccount{acc}, bondDenom, balances...)
 }
 
 // genesisStateWithValSet applies the provided validator set and genesis accounts
@@ -192,6 +197,7 @@ func genesisStateWithValSet(
 	genesisState GenesisState,
 	valSet *tmtypes.ValidatorSet,
 	genAccs []authtypes.GenesisAccount,
+	bondDenom string,
 	balances ...banktypes.Balance,
 ) GenesisState {
 	// set genesis accounts
@@ -241,7 +247,7 @@ func genesisStateWithValSet(
 	}
 	// set validators and delegations
 	currentStakingGenesis := stakingtypes.GetGenesisStateFromAppState(app.appCodec, genesisState)
-	currentStakingGenesis.Params.BondDenom = TestBondDenom
+	currentStakingGenesis.Params.BondDenom = bondDenom
 
 	stakingGenesis := stakingtypes.NewGenesisState(
 		currentStakingGenesis.Params,
@@ -261,13 +267,13 @@ func genesisStateWithValSet(
 
 	for range delegations {
 		// add delegated tokens to total supply
-		totalSupply = totalSupply.Add(sdk.NewCoin(TestBondDenom, bondAmt))
+		totalSupply = totalSupply.Add(sdk.NewCoin(bondDenom, bondAmt))
 	}
 
 	// add bonded amount to bonded pool module account
 	balances = append(balances, banktypes.Balance{
 		Address: authtypes.NewModuleAddress(stakingtypes.BondedPoolName).String(),
-		Coins:   sdk.Coins{sdk.NewCoin(TestBondDenom, bondAmt)},
+		Coins:   sdk.Coins{sdk.NewCoin(bondDenom, bondAmt)},
 	})
 
 	bankGenesis := banktypes.NewGenesisState(
@@ -334,9 +340,17 @@ func (tApp TestApp) InitializeFromGenesisStatesWithTimeAndChainIDAndHeight(
 
 	// Add default genesis states for at least 1 validator
 	if addValidator {
+		bondDenom := "ukava"
+		if modifiedStates[stakingtypes.ModuleName] {
+			stakingGenesis := stakingtypes.GetGenesisStateFromAppState(tApp.appCodec, genesisState)
+			if d := stakingGenesis.Params.BondDenom; d != "" && d != sdk.DefaultBondDenom {
+				bondDenom = d
+			}
+		}
 		genesisState = GenesisStateWithSingleValidator(
 			&tApp,
 			genesisState,
+			bondDenom,
 		)
 	}
 

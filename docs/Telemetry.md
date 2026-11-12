@@ -1,10 +1,10 @@
 # Telemetry
 
-[example metrics emitted by Kava application](./example-prometheus-metrics.txt)
+[example metrics emitted by the NSTChain application](./example-prometheus-metrics.txt)
 
-## Enabling Kava Metric Telemetry
+## Enabling NSTChain Metric Telemetry
 
-To enable the kava app to emit telemetry during operation, update the relevant config values to enable metrics:
+To enable the nstchain app to emit telemetry during operation, update the relevant config values to enable metrics:
 
 `config.toml`
 
@@ -65,7 +65,7 @@ Update [prometheus config](../prometheus.yml) to collect metrics from your local
 
 ### Collecting from remote host
 
-Update the kava config on the host and restart using the instructions from `Enabling Kava Metric Emission`
+Update the nstchain config on the host and restart using the instructions from `Enabling NSTChain Metric Telemetry`
 
 Install [ngrok](https://ngrok.com/download) on the remote host
 

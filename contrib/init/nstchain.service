@@ -1,12 +1,12 @@
 [Unit]
-Description=Kava daemon
+Description=NSTChain daemon
 After=network-online.target
 
 [Service]
 
-# Run as kava:kava
-User=kava
-ExecStart=/home/kava/go/bin/kvd start
+# Run as nstchain:nstchain
+User=nstchain
+ExecStart=/home/nstchain/go/bin/nstchain start
 Restart=on-failure
 RestartSec=3
 LimitNOFILE=4096

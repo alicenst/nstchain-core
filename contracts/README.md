@@ -1,6 +1,6 @@
-# Kava EVM contracts
+# NSTChain EVM contracts
 
-Contracts for the Kava EVM used by the Kava blockchain.
+Contracts for the NSTChain EVM.
 Includes an ERC20 contract for wrapping native cosmos sdk.Coins.
 
 ## Setup

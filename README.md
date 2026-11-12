@@ -1,17 +1,9 @@
 # nstchain
 
-<p align="center">
-  <img src="./kava-logo.svg" width="300" alt="nstchain Logo">
-</p>
-
 <div align="center">
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/ISTGlobal_.svg?label=Follow&style=social)](https://x.com/ISTGlobal_)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE.md)
-
-</div>
-
-<div align="center">
 
 </div>
 
@@ -47,8 +39,8 @@ nstchain is a decentralized finance (DeFi) blockchain platform built on the Cosm
 
 ```bash
 # 克隆代码仓库
-git clone git@github.com:alicenst/nstchain-core.git
-cd nstchain
+git clone git@github.com:nstchain/nstchain-core.git
+cd nstchain-core
 
 # 安装（默认安装 ./cmd/nstchain 可执行文件，名称为 nstchain）
 make install
@@ -91,7 +83,7 @@ make test-all
 # 构建二进制
 make build
 
-# 构建 Docker 镜像（标记为 kava/kava:local，镜像名将在后续版本改为 nstchain）
+# 构建 Docker 镜像（标记为 nstchain/nstchain:local）
 make docker-build
 ```
 

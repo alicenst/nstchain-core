@@ -30,6 +30,6 @@ For additional details on how balance conversions work, see **[Concepts](01_conc
 
 ### ERC20 Token <> sdk.Coin Conversion
 
-evmutil exposes messages to allow for the conversion of Kava ERC20 tokens and sdk.Coins via a whitelist.
+evmutil exposes messages to allow for the conversion of NSTChain ERC20 tokens and sdk.Coins via a whitelist.
 
 For additional details on how these messages work, see **[Messages](03_messages.md)**.

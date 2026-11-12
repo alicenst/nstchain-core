@@ -17,7 +17,7 @@ This repository builds `nstchain`.
 
 ```bash
 git checkout <release-commit>
-make build-linux CMD=kava
+make build-linux
 sha256sum out/linux/nstchain
 ./out/linux/nstchain version --long
 ```

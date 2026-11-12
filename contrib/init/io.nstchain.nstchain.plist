@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>io.kava.kvd</string>
+	<string>io.nstchain.nstchain</string>
 	<key>ProgramArguments</key>
 	<array>
-		<!--Assumes user is "kava"-->
-		<string>/Users/kava/go/bin/kvd</string>
+		<!--Assumes user is "nstchain"-->
+		<string>/Users/nstchain/go/bin/nstchain</string>
     <string>start</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
 	<key>UserName</key>
-	<string>kava</string>
+	<string>nstchain</string>
 </dict>
 </plist>

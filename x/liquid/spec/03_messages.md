@@ -30,7 +30,7 @@ type MsgMintDerivative struct {
 ```jsonc
 {
   // user who owns the delegation
-  "sender": "kava10wlnqzyss4accfqmyxwx5jy5x9nfkwh6qm7n4t",
+  "sender": "nst10wlnqzyss4accfqmyxwx5jy5x9nfkwh6uf2k04",
   // validator the user has delegated to
   "validator": "kavavaloper1ypjp0m04pyp73hwgtc0dgkx0e9rrydeckewa42",
   // amount of staked ukava to be converted into bkava
@@ -67,8 +67,8 @@ type MsgBurnDerivative struct {
 ```jsonc
 {
   // user who owns the bkava
-  "sender": "kava10wlnqzyss4accfqmyxwx5jy5x9nfkwh6qm7n4t",
-  // the amount of bkava the user wants to convert back into normal staked kava
+  "sender": "nst10wlnqzyss4accfqmyxwx5jy5x9nfkwh6uf2k04",
+  // the amount of bkava the user wants to convert back into normal staked unst
   "amount": {
     "amount": "1234000000",
     "denom": "bkava-kavavaloper1ypjp0m04pyp73hwgtc0dgkx0e9rrydeckewa42"

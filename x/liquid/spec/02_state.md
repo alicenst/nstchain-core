@@ -5,7 +5,7 @@ order: 2
 # State
 
 ## Module Account
-The liquid module defines a module account with name `liquid` that has `Minter` and `Burner` module account permissions. The associated bech32 account address is `kava1gggszchqvw2l65my03mak6q5qfhz9cn2g0px29`. 
+The liquid module defines a module account with name `liquid` that has `Minter` and `Burner` module account permissions. The associated bech32 account address is `nst1gggszchqvw2l65my03mak6q5qfhz9cn25a4rsm`. 
 
 ## Genesis state
 

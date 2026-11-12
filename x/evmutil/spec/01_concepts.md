@@ -8,7 +8,7 @@ order: 1
 
 In order to use the EVM and be compatible with existing clients, the gas denom used by the EVM must be in 18 decimals. Since `ukava` has 6 decimals of precision, it cannot be used as the EVM gas denom directly.
 
-To use the Kava token on the EVM, the evmutil module provides an `EvmBankKeeper` that is responsible for the conversion of `ukava` and `akava`. A user's excess `akava` balance is stored in the `x/evmutil` store, while its `ukava` balance remains in the cosmos-sdk `x/bank` module.
+To use the NST token on the EVM, the evmutil module provides an `EvmBankKeeper` that is responsible for the conversion of `unst` and `anst`. A user's excess `anst` balance is stored in the `x/evmutil` store, while its `unst` balance remains in the cosmos-sdk `x/bank` module.
 
 ## `EvmBankKeeper` Overview
 
@@ -34,13 +34,13 @@ The swap logic ensures that all `akava` is backed by the equivalent `ukava` bala
 
 ## ERC20 token <> sdk.Coin Conversion
 
-`x/evmutil` facilitates moving assets between Kava's EVM and Cosmos co-chains. This must be handled differently depending on which co-chain to which the asset it native. The messages controlling these flows involve two accounts:
+`x/evmutil` facilitates moving assets between NSTChain's EVM and Cosmos co-chains. This must be handled differently depending on which co-chain to which the asset it native. The messages controlling these flows involve two accounts:
 1. The _initiator_ who sends coins from their co-chain
 2. The _receiver_ who receives coins on the other co-chain
 
-When converting assets from the EVM to the Cosmos co-chain, the initiator is an 0x EVM address and the receiver is a `kava1` Bech32 address.
+When converting assets from the EVM to the Cosmos co-chain, the initiator is an 0x EVM address and the receiver is a `nst1` Bech32 address.
 
-When converting assets from the Cosmos co-chain to the EVM, the initiator is a `kava1` Bech32 address and the receiver is an 0x EVM address.
+When converting assets from the Cosmos co-chain to the EVM, the initiator is a `nst1` Bech32 address and the receiver is an 0x EVM address.
 
 ### Cosmos-Native Assets
 

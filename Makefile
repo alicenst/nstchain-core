@@ -198,7 +198,7 @@ build-linux: go.sum
 # Alias used by the release documentation.
 build-release: build-linux
 
-# build on rocksdb-backed kava on macOS with shared libs from brew
+# build on rocksdb-backed nstchain on macOS with shared libs from brew
 # this assumes you are on macOS & these deps have been installed with brew:
 # rocksdb, snappy, lz4, and zstd
 # use like `make build-rocksdb-brew COSMOS_BUILD_OPTIONS=rocksdb`
@@ -236,26 +236,26 @@ format:
 	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -name '*.pb.go' | xargs misspell -w
 	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -name '*.pb.go' | xargs goimports -w -local github.com/tendermint
 	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -name '*.pb.go' | xargs goimports -w -local github.com/cosmos/cosmos-sdk
-	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -name '*.pb.go' | xargs goimports -w -local github.com/kava-labs/kava
+	find . -name '*.go' -type f -not -path "./vendor*" -not -path "*.git*" -not -name '*.pb.go' | xargs goimports -w -local github.com/nstchain/nstchain-core
 .PHONY: format
 
 ###############################################################################
 ###                                Localnet                                 ###
 ###############################################################################
 
-# Build docker image and tag as kava/kava:local
+# Build docker image and tag as nstchain/nstchain:local
 docker-build:
-	DOCKER_BUILDKIT=1 $(DOCKER) build -t kava/kava:local --load .
+	DOCKER_BUILDKIT=1 $(DOCKER) build -t nstchain/nstchain:local --load .
 
 docker-build-rocksdb:
-	DOCKER_BUILDKIT=1 $(DOCKER) build -f Dockerfile-rocksdb -t kava/kava:local .
+	DOCKER_BUILDKIT=1 $(DOCKER) build -f Dockerfile-rocksdb -t nstchain/nstchain:local .
 
-build-docker-local-kava:
+build-docker-local-nstchain:
 	@$(MAKE) -C networks/local
 
 # Run a 4-node testnet locally
 localnet-start: build-linux localnet-stop
-	@if ! [ -f build/node0/kvd/config/genesis.json ]; then docker run --rm -v $(CURDIR)/build:/kvd:Z kava/kavanode testnet --v 4 -o . --starting-ip-address 192.168.10.2 --keyring-backend=test ; fi
+	@if ! [ -f build/node0/nstchain/config/genesis.json ]; then docker run --rm -v $(CURDIR)/build:/nstchain:Z nstchain/nstchainnode testnet --v 4 -o . --starting-ip-address 192.168.10.2 --keyring-backend=test ; fi
 	$(DOCKER) compose up -d
 
 localnet-stop:
@@ -322,7 +322,7 @@ ci:
 
 # Run cli integration tests
 # `-p 4` to use 4 cores, `-tags cli_test` to tell $(GO_BIN) not to ignore the cli package
-# These tests use the `kvd` or `kvcli` binaries in the build dir, or in `$BUILDDIR` if that env var is set.
+# These tests use the `nstchain` binary in the build dir, or in `$BUILDDIR` if that env var is set.
 test-cli: build
 	@$(GO_BIN) test ./cli_test -tags cli_test -v -p 4
 
@@ -334,9 +334,9 @@ test-migrate:
 # This submits an AWS Batch job to run a lot of sims, each within a docker image. Results are uploaded to S3
 start-remote-sims:
 	# build the image used for running sims in, and tag it
-	docker build -f simulations/Dockerfile -t kava/kava-sim:master .
+	docker build -f simulations/Dockerfile -t nstchain/nstchain-sim:master .
 	# push that image to the hub
-	docker push kava/kava-sim:master
+	docker push nstchain/nstchain-sim:master
 	# submit an array job on AWS Batch, using 1000 seeds, spot instances
 	aws batch submit-job \
 		-—job-name "master-$(VERSION)" \

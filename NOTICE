@@ -1,0 +1,27 @@
+NSTChain
+Copyright 2024-2026 NSTChain contributors
+
+This product includes software developed by Kava Labs, Inc. and other
+contributors to the Kava project.
+
+Upstream project: https://github.com/Kava-Labs/kava
+Imported source baseline: 53176d9a0f8211efe9f4a18cc0ace7a7bab45037
+License: Apache License, Version 2.0 (see LICENSE.md)
+
+The NSTChain source tree is derived from the Kava codebase. The original
+copyright notices and the Apache 2.0 license are retained. Kava is not the
+operator of NSTChain and does not endorse this distribution.
+
+The following upstream forks are currently pinned in go.mod. They remain
+third-party works under their respective licenses and copyright holders:
+
+- github.com/kava-labs/cometbft v0.37.13-kava.1
+- github.com/kava-labs/cosmos-sdk v0.47.15-iavl-v1-kava.1
+- github.com/kava-labs/iavl v1.2.0-kava.2
+- github.com/kava-labs/ethermint v0.21.0-kava-v27.0
+- github.com/Kava-Labs/opendb v0.0.0-20240719173129-a2f11f6d7e51
+
+Other dependencies and their licenses are recorded in go.sum and in the
+upstream module metadata. Vendored or forked copies, when introduced, must
+carry a NOTICE entry describing the source repository, pinned commit or tag,
+local patches, and the applicable license.

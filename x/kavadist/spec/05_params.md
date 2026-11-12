@@ -32,12 +32,12 @@ Each `CoreReward` has the following properties
 
 | Key     | Type           | Example                                       | Description                                              |
 | ------- | -------------- | --------------------------------------------- | -------------------------------------------------------- |
-| Address | sdk.AccAddress | "kava1x07eng0q9027j7wayap8nvqegpf625uu0w90tq" | address of core infrastructure provider                  |
+| Address | sdk.AccAddress | "nst1x07eng0q9027j7wayap8nvqegpf625uunu3237" | address of core infrastructure provider                  |
 | Weight  | sdk.Dec        | "0.912345678907654321"                        | % of remaining minted rewards allocated to this provider |
 
 Each `PartnerReward` has the following properties
 
 | Key              | Type           | Example                                       | Description                        |
 | ---------------- | -------------- | --------------------------------------------- | ---------------------------------- |
-| Address          | sdk.AccAddress | "kava1x0cztstumgcfrw69s5nd5qtu9vdcg7alqtyhgr" | address of infrastructure partner  |
+| Address          | sdk.AccAddress | "nst1x0cztstumgcfrw69s5nd5qtu9vdcg7aluesjja" | address of infrastructure partner  |
 | RewardsPerSecond | object (coin)  | {"denom": "ukava", "amount": "1285" }         | per second reward for this partner |

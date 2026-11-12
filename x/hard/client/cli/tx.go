@@ -182,7 +182,7 @@ func getCmdLiquidate() *cobra.Command {
 		Long:  strings.TrimSpace(`liquidate a borrower that's over their loan-to-value ratio`),
 		Args:  cobra.ExactArgs(1),
 		Example: fmt.Sprintf(
-			`%s tx %s liquidate kava1hgcfsuwc889wtdmt8pjy7qffua9dd2tralu64j --from <key>`, version.AppName, types.ModuleName,
+			`%s tx %s liquidate nst123fxg0l602etulhhcdm0vt7l57qya5wjy36jcu --from <key>`, version.AppName, types.ModuleName,
 		),
 		RunE: func(cmd *cobra.Command, args []string) error {
 			clientCtx, err := client.GetClientTxContext(cmd)

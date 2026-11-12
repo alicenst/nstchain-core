@@ -167,7 +167,7 @@ func (suite *Suite) SetupTest() {
 	)
 
 	stakingParams := stakingtypes.DefaultParams()
-	stakingParams.BondDenom = "unst"
+	stakingParams.BondDenom = app.TestBondDenom
 
 	stakingGs := stakingtypes.GenesisState{
 		Params: stakingParams,

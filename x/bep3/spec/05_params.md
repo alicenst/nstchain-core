@@ -8,7 +8,7 @@ The bep3 module contains the following parameters:
 
 | Key               | Type           | Example                                       | Description                |
 | ----------------- | -------------- | --------------------------------------------- | -------------------------- |
-| BnbDeputyAddress  | sdk.AccAddress | "kava1r4v2zdhdalfj2ydazallqvrus9fkphmglhn6u6" | deputy's Kava address      |
+| BnbDeputyAddress  | sdk.AccAddress | "nst1r4v2zdhdalfj2ydazallqvrus9fkphmgr98lxy" | deputy's NSTChain address      |
 | BnbDeputyFixedFee | sdkmath.Int    | sdkmath.NewInt(1000)                          | deputy's fixed bnb fee     |
 | MinAmount         | sdkmath.Int    | sdkmath.NewInt(0)                             | minimum swap amount        |
 | MaxAmount         | sdkmath.Int    | sdkmath.NewInt(1000000000000)                 | maximum swap amount        |

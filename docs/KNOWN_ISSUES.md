@@ -8,7 +8,9 @@ until they are fixed.
 
 - `x/evmutil/...` and `x/earn/...` now use the `nst` prefix and the `unst`
   staking/savings denom; both package trees run in the CI gate.
-- The test app's default bond denom is `app.TestBondDenom` (`unst`).
+- The shared test app keeps `ukava` as its default bond denom for unmodified
+  suites. Tests that need the production denom pass an explicit staking
+  genesis (see `x/earn/testutil`) or use `app.TestBondDenom`.
 - The current CI gate runs `./app`, `./client/rest`, `./x/evmutil/...`, and
   `./x/earn/...`. Expand it as packages are repaired. Do not delete failing
   tests or mark them skipped to make the gate green.

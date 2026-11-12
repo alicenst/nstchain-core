@@ -46,7 +46,7 @@ func (suite *tallyHandlerSuite) SetupTest() {
 
 	stakingKeeper := *suite.app.GetStakingKeeper()
 	suite.staking = stakingHelper{stakingKeeper}
-	suite.staking.setBondDenom(suite.ctx, TestBondDenom)
+	suite.staking.setBondDenom(suite.ctx, "ukava")
 
 	suite.tallier = NewTallyHandler(
 		suite.app.GetGovKeeper(),
