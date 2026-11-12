@@ -6,15 +6,13 @@ until they are fixed.
 
 ## Test-suite rebrand debt
 
-- `x/evmutil/keeper` and `x/evmutil/types` tests still use the old `kava1...`
-  Bech32 prefix and the old `aist` denom. The node now configures the `nst`
-  prefix and `anst` EVM denom, so those tests fail before reaching the behavior
-  under test.
+- `x/evmutil/...` now uses the `nst` prefix and the `anst` EVM denom; the full
+  package tree runs in the CI gate.
 - `x/earn` tests still use `ukava` while the local test app configures `uist`;
   `go test ./x/earn/...` fails with `invalid deposit denom`.
-- The current CI gate therefore runs `./app`, `./client/rest`, `./x/evmutil`,
-  and `./x/evmutil/migrations/v2`. Expand it as packages are repaired. Do not
-  delete failing tests or mark them skipped to make the gate green.
+- The current CI gate runs `./app`, `./client/rest`, and `./x/evmutil/...`.
+  Expand it as packages are repaired. Do not delete failing tests or mark them
+  skipped to make the gate green.
 
 ## EVM fork mismatch
 

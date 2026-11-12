@@ -43,7 +43,7 @@ func (suite *Bep3ConversionTestSuite) setEnabledConversionPairDenom(denom string
 }
 
 func (suite *Bep3ConversionTestSuite) testConvertBep3CoinToERC20(denom string) {
-	invoker, err := sdk.AccAddressFromBech32("kava123fxg0l602etulhhcdm0vt7l57qya5wjcrwhzz")
+	invoker, err := sdk.AccAddressFromBech32("nst123fxg0l602etulhhcdm0vt7l57qya5wjy36jcu")
 	receiverAddr := testutil.MustNewInternalEVMAddressFromString("0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2")
 	suite.Require().NoError(err)
 

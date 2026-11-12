@@ -84,7 +84,7 @@ func getCmdConvertEvmERC20ToCoin() *cobra.Command {
 		Use:   "convert-evm-erc20-to-coin [Kava receiver address] [Kava ERC20 address] [amount]",
 		Short: "EVM-native asset: converts an ERC20 on EVM co-chain to a coin on Cosmos co-chain",
 		Example: fmt.Sprintf(`
-%[1]s tx %[2]s convert-evm-erc20-to-coin kava10wlnqzyss4accfqmyxwx5jy5x9nfkwh6qm7n4t 0xeA7100edA2f805356291B0E55DaD448599a72C6d 1000000000000000 --from <key> --gas 1000000
+%[1]s tx %[2]s convert-evm-erc20-to-coin nst10wlnqzyss4accfqmyxwx5jy5x9nfkwh6uf2k04 0xeA7100edA2f805356291B0E55DaD448599a72C6d 1000000000000000 --from <key> --gas 1000000
 `, version.AppName, types.ModuleName,
 		),
 		Args: cobra.ExactArgs(3),
@@ -166,8 +166,8 @@ func getCmdMsgConvertCosmosCoinFromERC20() *cobra.Command {
 		Use:   "convert-cosmos-coin-from-erc20 [receiver_kava_address] [amount] [flags]",
 		Short: "Cosmos-native asset: converts an ERC20 on EVM co-chain back to a coin on Cosmos co-chain",
 		Example: fmt.Sprintf(
-			`Convert ERC20 representation of 500 ATOM back to a Cosmos coin, sending to kava1q0dkky0505r555etn6u2nz4h4kjcg5y8dg863a:
-  %s tx %s convert-cosmos-coin-from-erc20 kava1q0dkky0505r555etn6u2nz4h4kjcg5y8dg863a 500000000ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2 --from <key> --gas 2000000`,
+			`Convert ERC20 representation of 500 ATOM back to a Cosmos coin, sending to nst1q0dkky0505r555etn6u2nz4h4kjcg5y836nltr:
+  %s tx %s convert-cosmos-coin-from-erc20 nst1q0dkky0505r555etn6u2nz4h4kjcg5y836nltr 500000000ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2 --from <key> --gas 2000000`,
 			version.AppName, types.ModuleName,
 		),
 		Args: cobra.ExactArgs(2),

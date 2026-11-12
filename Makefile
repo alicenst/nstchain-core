@@ -318,7 +318,7 @@ ci:
 	@test -z "$$(gofmt -l $$(git ls-files '*.go'))" || (echo "gofmt required"; gofmt -l $$(git ls-files '*.go'); exit 1)
 	@mkdir -p out/ci
 	@$(GO_BIN) build -o out/ci/$(PROJECT_NAME) ./cmd/$(CMD)
-	@$(GO_BIN) test -count=1 ./app ./client/rest ./x/evmutil ./x/evmutil/migrations/v2
+	@$(GO_BIN) test -count=1 ./app ./client/rest ./x/evmutil/...
 	@$(GO_BIN) vet ./app ./client/rest
 
 # Run cli integration tests

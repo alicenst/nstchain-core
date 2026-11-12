@@ -44,7 +44,7 @@ jobs:
           ./out/linux/nstchain version --long
 
       - name: Run unit smoke tests
-        run: go test -count=1 ./app ./client/rest ./x/evmutil ./x/evmutil/migrations/v2
+        run: go test -count=1 ./app ./client/rest ./x/evmutil/...
 
       - name: Vet selected packages
         run: go vet ./app ./client/rest
