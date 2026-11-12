@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build and unit smoke tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.23.4"
+          cache: true
+          cache-dependency-path: go.sum
+
+      - name: Verify modules
+        run: go mod verify
+
+      - name: Check formatting
+        run: |
+          test -z "$(gofmt -l $(git ls-files '*.go'))"
+
+      - name: Build daemon
+        run: go build -o /tmp/nstchain-ci ./cmd/kava
+
+      - name: Run unit smoke tests
+        run: go test -count=1 ./app ./client/rest ./x/evmutil ./x/evmutil/migrations/v2
+
+      - name: Vet selected packages
+        run: go vet ./app ./client/rest

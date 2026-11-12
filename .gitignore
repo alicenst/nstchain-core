@@ -1,0 +1,33 @@
+# OS / archive metadata
+.DS_Store
+._*
+**/._*
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Go build / test output
+/out/
+/build/bin/
+/build/.cache/
+*.test
+*.out
+coverage.out
+coverage.html
+
+# Local runtime data and logs
+/data/
+*.log
+*.log.*
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# macOS / Windows generated files
+Thumbs.db
+desktop.ini
