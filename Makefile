@@ -310,9 +310,15 @@ test-ibc: docker-build
 test:
 	@$(GO_BIN) test $$($(GO_BIN) list ./... | grep -v 'contrib' | grep -v 'tests/e2e')
 
+# Guard against re-introducing the upstream Kava module path or command.
+.PHONY: check-dekava
+check-dekava:
+	@bash scripts/check-dekava.sh
+
 # Baseline CI gate. Keep this in sync with .github/workflows/ci.yml.
 .PHONY: ci
 ci:
+	@bash scripts/check-dekava.sh
 	@$(GO_BIN) mod verify
 	@test -z "$$(gofmt -l $$(git ls-files '*.go'))" || (echo "gofmt required"; gofmt -l $$(git ls-files '*.go'); exit 1)
 	@mkdir -p out/ci

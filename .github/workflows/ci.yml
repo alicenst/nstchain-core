@@ -38,6 +38,9 @@ jobs:
         run: |
           test -z "$(gofmt -l $(git ls-files '*.go'))"
 
+      - name: Check De-Kava guard
+        run: make check-dekava
+
       - name: Build linux/amd64 daemon
         run: |
           make build-linux
