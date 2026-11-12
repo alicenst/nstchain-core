@@ -24,9 +24,9 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/Kava-Labs/opendb"
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/app/params"
-	metricstypes "github.com/kava-labs/kava/x/metrics/types"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/app/params"
+	metricstypes "github.com/nstchain/nstchain-core/x/metrics/types"
 )
 
 const (

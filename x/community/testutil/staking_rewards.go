@@ -12,10 +12,10 @@ import (
 	sdkmath "cosmossdk.io/math"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/x/community"
-	"github.com/kava-labs/kava/x/community/keeper"
-	"github.com/kava-labs/kava/x/community/types"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/x/community"
+	"github.com/nstchain/nstchain-core/x/community/keeper"
+	"github.com/nstchain/nstchain-core/x/community/types"
 )
 
 // StakingRewardsTestSuite tests staking rewards per second logic

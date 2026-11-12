@@ -8,10 +8,10 @@ import (
 	govv1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
 	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
-	earnkeeper "github.com/kava-labs/kava/x/earn/keeper"
-	liquidkeeper "github.com/kava-labs/kava/x/liquid/keeper"
-	liquidtypes "github.com/kava-labs/kava/x/liquid/types"
-	savingskeeper "github.com/kava-labs/kava/x/savings/keeper"
+	earnkeeper "github.com/nstchain/nstchain-core/x/earn/keeper"
+	liquidkeeper "github.com/nstchain/nstchain-core/x/liquid/keeper"
+	liquidtypes "github.com/nstchain/nstchain-core/x/liquid/types"
+	savingskeeper "github.com/nstchain/nstchain-core/x/savings/keeper"
 )
 
 var _ govv1.TallyHandler = TallyHandler{}

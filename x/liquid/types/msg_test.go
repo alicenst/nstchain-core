@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/kava-labs/kava/x/liquid/types"
+	"github.com/nstchain/nstchain-core/x/liquid/types"
 )
 
 func TestMsgMintDerivative_Signing(t *testing.T) {

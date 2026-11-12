@@ -4,7 +4,7 @@ import (
 	"time"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/kava-labs/kava/x/community/types"
+	"github.com/nstchain/nstchain-core/x/community/types"
 )
 
 // CheckAndDisableMintAndKavaDistInflation compares the disable inflation time and block time,

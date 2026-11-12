@@ -8,9 +8,9 @@ import (
 	sdkmath "cosmossdk.io/math"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/x/auction"
-	"github.com/kava-labs/kava/x/auction/testutil"
-	types "github.com/kava-labs/kava/x/auction/types"
+	"github.com/nstchain/nstchain-core/x/auction"
+	"github.com/nstchain/nstchain-core/x/auction/testutil"
+	types "github.com/nstchain/nstchain-core/x/auction/types"
 )
 
 type abciTestSuite struct {

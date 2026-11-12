@@ -20,7 +20,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
 	"github.com/cosmos/cosmos-sdk/types"
-	"github.com/kava-labs/kava/client/rest"
+	"github.com/nstchain/nstchain-core/client/rest"
 )
 
 func TestBaseReq_Sanitize(t *testing.T) {

@@ -6,7 +6,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 
-	evmutiltypes "github.com/kava-labs/kava/x/evmutil/types"
+	evmutiltypes "github.com/nstchain/nstchain-core/x/evmutil/types"
 )
 
 func (suite *IntegrationTestSuite) TestGrpcClientQueryCosmosModule_Balance() {

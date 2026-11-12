@@ -12,10 +12,10 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/x/bep3"
-	"github.com/kava-labs/kava/x/bep3/keeper"
-	"github.com/kava-labs/kava/x/bep3/types"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/x/bep3"
+	"github.com/nstchain/nstchain-core/x/bep3/keeper"
+	"github.com/nstchain/nstchain-core/x/bep3/types"
 )
 
 type AtomicSwapTestSuite struct {

@@ -10,7 +10,7 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/stretchr/testify/require"
 
-	"github.com/kava-labs/kava/x/incentive/types"
+	"github.com/nstchain/nstchain-core/x/incentive/types"
 )
 
 func TestMsgClaim_Validate(t *testing.T) {

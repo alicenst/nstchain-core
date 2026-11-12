@@ -8,7 +8,7 @@ import (
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/x/community/types"
+	"github.com/nstchain/nstchain-core/x/community/types"
 )
 
 // Keeper of the community store

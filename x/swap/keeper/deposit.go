@@ -7,7 +7,7 @@ import (
 	sdkmath "cosmossdk.io/math"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/x/swap/types"
+	"github.com/nstchain/nstchain-core/x/swap/types"
 )
 
 // Deposit creates a new pool or adds liquidity to an existing pool.  For a pool to be created, a pool

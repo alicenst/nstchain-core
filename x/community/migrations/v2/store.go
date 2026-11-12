@@ -8,7 +8,7 @@ import (
 	sdkmath "cosmossdk.io/math"
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/kava-labs/kava/x/community/types"
+	"github.com/nstchain/nstchain-core/x/community/types"
 )
 
 // Migrate migrates the x/community module state from the consensus version 1 to

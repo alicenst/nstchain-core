@@ -15,9 +15,9 @@ import (
 
 	abci "github.com/cometbft/cometbft/abci/types"
 
-	"github.com/kava-labs/kava/x/incentive/client/cli"
-	"github.com/kava-labs/kava/x/incentive/keeper"
-	"github.com/kava-labs/kava/x/incentive/types"
+	"github.com/nstchain/nstchain-core/x/incentive/client/cli"
+	"github.com/nstchain/nstchain-core/x/incentive/keeper"
+	"github.com/nstchain/nstchain-core/x/incentive/types"
 )
 
 var (

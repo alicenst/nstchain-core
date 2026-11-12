@@ -10,8 +10,8 @@ import (
 	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	v2evmutil "github.com/kava-labs/kava/x/evmutil/migrations/v2"
-	"github.com/kava-labs/kava/x/evmutil/types"
+	v2evmutil "github.com/nstchain/nstchain-core/x/evmutil/migrations/v2"
+	"github.com/nstchain/nstchain-core/x/evmutil/types"
 )
 
 func TestStoreMigrationAddsKeyTableIncludingNewParam(t *testing.T) {

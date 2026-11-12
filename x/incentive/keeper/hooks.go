@@ -5,11 +5,11 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	cdptypes "github.com/kava-labs/kava/x/cdp/types"
-	earntypes "github.com/kava-labs/kava/x/earn/types"
-	hardtypes "github.com/kava-labs/kava/x/hard/types"
-	savingstypes "github.com/kava-labs/kava/x/savings/types"
-	swaptypes "github.com/kava-labs/kava/x/swap/types"
+	cdptypes "github.com/nstchain/nstchain-core/x/cdp/types"
+	earntypes "github.com/nstchain/nstchain-core/x/earn/types"
+	hardtypes "github.com/nstchain/nstchain-core/x/hard/types"
+	savingstypes "github.com/nstchain/nstchain-core/x/savings/types"
+	swaptypes "github.com/nstchain/nstchain-core/x/swap/types"
 )
 
 // Hooks wrapper struct for hooks

@@ -10,8 +10,8 @@ import (
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/app/ante"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/app/ante"
 )
 
 var _ sdk.AnteHandler = (&MockAnteHandler{}).AnteHandle

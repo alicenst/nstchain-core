@@ -6,7 +6,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/x/evmutil/types"
+	"github.com/nstchain/nstchain-core/x/evmutil/types"
 )
 
 type msgServer struct {

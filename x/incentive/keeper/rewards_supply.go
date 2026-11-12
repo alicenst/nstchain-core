@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	hardtypes "github.com/kava-labs/kava/x/hard/types"
-	"github.com/kava-labs/kava/x/incentive/types"
+	hardtypes "github.com/nstchain/nstchain-core/x/hard/types"
+	"github.com/nstchain/nstchain-core/x/incentive/types"
 )
 
 // AccumulateHardSupplyRewards calculates new rewards to distribute this block and updates the global indexes to reflect this.

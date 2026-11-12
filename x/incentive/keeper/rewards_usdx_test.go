@@ -9,13 +9,13 @@ import (
 	proposaltypes "github.com/cosmos/cosmos-sdk/x/params/types/proposal"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/kava-labs/kava/app"
-	cdpkeeper "github.com/kava-labs/kava/x/cdp/keeper"
-	cdptypes "github.com/kava-labs/kava/x/cdp/types"
-	"github.com/kava-labs/kava/x/incentive/keeper"
-	"github.com/kava-labs/kava/x/incentive/testutil"
-	"github.com/kava-labs/kava/x/incentive/types"
-	kavadisttypes "github.com/kava-labs/kava/x/kavadist/types"
+	"github.com/nstchain/nstchain-core/app"
+	cdpkeeper "github.com/nstchain/nstchain-core/x/cdp/keeper"
+	cdptypes "github.com/nstchain/nstchain-core/x/cdp/types"
+	"github.com/nstchain/nstchain-core/x/incentive/keeper"
+	"github.com/nstchain/nstchain-core/x/incentive/testutil"
+	"github.com/nstchain/nstchain-core/x/incentive/types"
+	kavadisttypes "github.com/nstchain/nstchain-core/x/kavadist/types"
 )
 
 type USDXIntegrationTests struct {

@@ -12,7 +12,7 @@ import (
 
 	"github.com/cometbft/cometbft/libs/log"
 
-	"github.com/kava-labs/kava/x/auction/types"
+	"github.com/nstchain/nstchain-core/x/auction/types"
 )
 
 type Keeper struct {

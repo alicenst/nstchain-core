@@ -14,7 +14,7 @@ import (
 	"github.com/strangelove-ventures/interchaintest/v7/testreporter"
 	"github.com/stretchr/testify/require"
 
-	kavainterchain "github.com/kava-labs/kava/tests/interchain"
+	kavainterchain "github.com/nstchain/nstchain-core/tests/interchain"
 )
 
 var (

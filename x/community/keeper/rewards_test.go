@@ -9,7 +9,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/x/community/keeper"
+	"github.com/nstchain/nstchain-core/x/community/keeper"
 )
 
 func TestStakingRewardsCalculator(t *testing.T) {

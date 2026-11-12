@@ -1,4 +1,4 @@
-module github.com/kava-labs/kava/tests/interchain
+module github.com/nstchain/nstchain-core/tests/interchain
 
 go 1.22.7
 
@@ -14,7 +14,7 @@ require (
 
 require (
 	github.com/cosmos/cosmos-sdk v0.47.15
-	github.com/kava-labs/kava v0.0.0-00010101000000-000000000000
+	github.com/nstchain/nstchain-core v0.0.0-00010101000000-000000000000
 	github.com/strangelove-ventures/interchaintest/v7 v7.0.1-0.20240506191732-71a15c29f2b7
 	google.golang.org/grpc v1.67.0
 )
@@ -300,4 +300,4 @@ replace (
 	golang.org/x/exp => golang.org/x/exp v0.0.0-20230711153332-06a737ee72cb
 )
 
-replace github.com/kava-labs/kava => ../../
+replace github.com/nstchain/nstchain-core => ../../

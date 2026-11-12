@@ -13,7 +13,7 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/cosmos/cosmos-sdk/types/query"
 
-	"github.com/kava-labs/kava/x/savings/types"
+	"github.com/nstchain/nstchain-core/x/savings/types"
 )
 
 type queryServer struct {

@@ -8,7 +8,7 @@ import (
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/x/incentive/types"
+	"github.com/nstchain/nstchain-core/x/incentive/types"
 )
 
 // Keeper keeper for the incentive module

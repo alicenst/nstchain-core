@@ -7,7 +7,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/grpc/tmservice"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	"github.com/kava-labs/kava/client/grpc"
+	"github.com/nstchain/nstchain-core/client/grpc"
 )
 
 // LiveNodeRunnerConfig implements NodeRunner.

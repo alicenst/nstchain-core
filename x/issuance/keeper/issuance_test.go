@@ -16,9 +16,9 @@ import (
 	"github.com/cometbft/cometbft/crypto"
 	tmtime "github.com/cometbft/cometbft/types/time"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/x/issuance/keeper"
-	"github.com/kava-labs/kava/x/issuance/types"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/x/issuance/keeper"
+	"github.com/nstchain/nstchain-core/x/issuance/types"
 )
 
 // Test suite used for all keeper tests

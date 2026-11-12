@@ -2,7 +2,7 @@ FROM kava/rocksdb:v9.3.1-go1.22 AS kava-builder
 
 RUN apt-get update
 
-WORKDIR /root/kava
+WORKDIR /root/nstchain
 # Copy dependency files first to facilitate dependency caching
 COPY ./go.mod ./
 COPY ./go.sum ./
@@ -35,6 +35,6 @@ COPY --from=kava-builder /usr/local/lib/ /usr/local/lib/
 RUN ldconfig
 
 # copy kava binary
-COPY --from=kava-builder /go/bin/kava /bin/kava
+COPY --from=kava-builder /go/bin/nstchain /bin/nstchain
 
-CMD ["kava"]
+CMD ["nstchain"]

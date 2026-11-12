@@ -4,9 +4,9 @@ import (
 	"fmt"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/kava-labs/kava/x/community/types"
+	"github.com/nstchain/nstchain-core/x/community/types"
 
-	kavadisttypes "github.com/kava-labs/kava/x/kavadist/types"
+	kavadisttypes "github.com/nstchain/nstchain-core/x/kavadist/types"
 
 	distrtypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
 )

@@ -8,10 +8,10 @@ import (
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	govv1beta1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/x/committee/keeper"
-	"github.com/kava-labs/kava/x/committee/testutil"
-	"github.com/kava-labs/kava/x/committee/types"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/x/committee/keeper"
+	"github.com/nstchain/nstchain-core/x/committee/testutil"
+	"github.com/nstchain/nstchain-core/x/committee/types"
 )
 
 // getProposalVoteMap collects up votes into a map indexed by proposalID

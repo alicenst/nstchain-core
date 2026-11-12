@@ -12,9 +12,9 @@ import (
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 	govv1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
 
-	"github.com/kava-labs/kava/tests/e2e/testutil"
-	"github.com/kava-labs/kava/tests/util"
-	communitytypes "github.com/kava-labs/kava/x/community/types"
+	"github.com/nstchain/nstchain-core/tests/e2e/testutil"
+	"github.com/nstchain/nstchain-core/tests/util"
+	communitytypes "github.com/nstchain/nstchain-core/x/community/types"
 )
 
 func (suite *IntegrationTestSuite) TestCommunityUpdateParams_NonAuthority() {

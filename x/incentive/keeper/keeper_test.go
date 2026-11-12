@@ -9,9 +9,9 @@ import (
 	tmprototypes "github.com/cometbft/cometbft/proto/tendermint/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/x/incentive/keeper"
-	"github.com/kava-labs/kava/x/incentive/types"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/x/incentive/keeper"
+	"github.com/nstchain/nstchain-core/x/incentive/types"
 )
 
 // Test suite used for all keeper tests

@@ -3,7 +3,7 @@ package query_test
 import (
 	"testing"
 
-	"github.com/kava-labs/kava/client/grpc/query"
+	"github.com/nstchain/nstchain-core/client/grpc/query"
 	"github.com/stretchr/testify/require"
 )
 

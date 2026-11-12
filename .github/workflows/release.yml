@@ -29,7 +29,7 @@ jobs:
 
       - name: Build linux/amd64 binary
         run: |
-          make build-linux CMD=kava
+          make build-linux
           ./out/linux/nstchain version --long
 
       - name: Create checksum

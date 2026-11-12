@@ -11,9 +11,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/x/validator-vesting/keeper"
-	"github.com/kava-labs/kava/x/validator-vesting/types"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/x/validator-vesting/keeper"
+	"github.com/nstchain/nstchain-core/x/validator-vesting/types"
 )
 
 type grpcQueryTestSuite struct {

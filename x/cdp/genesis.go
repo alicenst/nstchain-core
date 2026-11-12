@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/x/cdp/keeper"
-	"github.com/kava-labs/kava/x/cdp/types"
+	"github.com/nstchain/nstchain-core/x/cdp/keeper"
+	"github.com/nstchain/nstchain-core/x/cdp/types"
 )
 
 // InitGenesis sets initial genesis state for cdp module

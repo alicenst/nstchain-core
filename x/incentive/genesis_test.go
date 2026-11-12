@@ -11,12 +11,12 @@ import (
 
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 
-	"github.com/kava-labs/kava/app"
-	hardtypes "github.com/kava-labs/kava/x/hard/types"
-	"github.com/kava-labs/kava/x/incentive"
-	"github.com/kava-labs/kava/x/incentive/keeper"
-	"github.com/kava-labs/kava/x/incentive/types"
-	kavadisttypes "github.com/kava-labs/kava/x/kavadist/types"
+	"github.com/nstchain/nstchain-core/app"
+	hardtypes "github.com/nstchain/nstchain-core/x/hard/types"
+	"github.com/nstchain/nstchain-core/x/incentive"
+	"github.com/nstchain/nstchain-core/x/incentive/keeper"
+	"github.com/nstchain/nstchain-core/x/incentive/types"
+	kavadisttypes "github.com/nstchain/nstchain-core/x/kavadist/types"
 )
 
 const (

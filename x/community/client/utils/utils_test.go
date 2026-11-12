@@ -9,7 +9,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/x/community/client/utils"
+	"github.com/nstchain/nstchain-core/x/community/client/utils"
 )
 
 func TestParseDepositProposal(t *testing.T) {

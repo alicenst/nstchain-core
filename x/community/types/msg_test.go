@@ -8,8 +8,8 @@ import (
 	sdkmath "cosmossdk.io/math"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/x/community/types"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/x/community/types"
 )
 
 func TestFundCommunityPool_ValidateBasic(t *testing.T) {

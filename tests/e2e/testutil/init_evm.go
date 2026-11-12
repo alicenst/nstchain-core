@@ -7,9 +7,9 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/kava-labs/kava/tests/e2e/contracts/greeter"
-	"github.com/kava-labs/kava/x/cdp/types"
-	evmutiltypes "github.com/kava-labs/kava/x/evmutil/types"
+	"github.com/nstchain/nstchain-core/tests/e2e/contracts/greeter"
+	"github.com/nstchain/nstchain-core/x/cdp/types"
+	evmutiltypes "github.com/nstchain/nstchain-core/x/evmutil/types"
 )
 
 // InitKavaEvmData is run after the chain is running, but before the tests are run.

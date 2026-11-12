@@ -10,7 +10,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	kavadistTypes "github.com/kava-labs/kava/x/kavadist/types"
+	kavadistTypes "github.com/nstchain/nstchain-core/x/kavadist/types"
 )
 
 // Parameter keys and default values

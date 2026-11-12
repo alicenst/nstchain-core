@@ -10,7 +10,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/version"
 	"github.com/spf13/cobra"
 
-	"github.com/kava-labs/kava/x/evmutil/types"
+	"github.com/nstchain/nstchain-core/x/evmutil/types"
 )
 
 // GetQueryCmd returns the cli query commands for this module

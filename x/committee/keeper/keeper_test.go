@@ -7,8 +7,8 @@ import (
 	govv1beta1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/kava-labs/kava/x/committee/testutil"
-	"github.com/kava-labs/kava/x/committee/types"
+	"github.com/nstchain/nstchain-core/x/committee/testutil"
+	"github.com/nstchain/nstchain-core/x/committee/types"
 )
 
 type keeperTestSuite struct {

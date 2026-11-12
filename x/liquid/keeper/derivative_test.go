@@ -10,8 +10,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/staking"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/x/liquid/types"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/x/liquid/types"
 )
 
 func (suite *KeeperTestSuite) TestBurnDerivative() {

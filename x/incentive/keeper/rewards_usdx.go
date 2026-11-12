@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	cdptypes "github.com/kava-labs/kava/x/cdp/types"
-	"github.com/kava-labs/kava/x/incentive/types"
+	cdptypes "github.com/nstchain/nstchain-core/x/cdp/types"
+	"github.com/nstchain/nstchain-core/x/incentive/types"
 )
 
 // AccumulateUSDXMintingRewards calculates new rewards to distribute this block and updates the global indexes to reflect this.

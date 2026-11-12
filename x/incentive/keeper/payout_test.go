@@ -12,14 +12,14 @@ import (
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	vestingtypes "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
 
-	"github.com/kava-labs/kava/app"
-	cdpkeeper "github.com/kava-labs/kava/x/cdp/keeper"
-	cdptypes "github.com/kava-labs/kava/x/cdp/types"
-	hardkeeper "github.com/kava-labs/kava/x/hard/keeper"
-	"github.com/kava-labs/kava/x/incentive/keeper"
-	"github.com/kava-labs/kava/x/incentive/testutil"
-	"github.com/kava-labs/kava/x/incentive/types"
-	kavadisttypes "github.com/kava-labs/kava/x/kavadist/types"
+	"github.com/nstchain/nstchain-core/app"
+	cdpkeeper "github.com/nstchain/nstchain-core/x/cdp/keeper"
+	cdptypes "github.com/nstchain/nstchain-core/x/cdp/types"
+	hardkeeper "github.com/nstchain/nstchain-core/x/hard/keeper"
+	"github.com/nstchain/nstchain-core/x/incentive/keeper"
+	"github.com/nstchain/nstchain-core/x/incentive/testutil"
+	"github.com/nstchain/nstchain-core/x/incentive/types"
+	kavadisttypes "github.com/nstchain/nstchain-core/x/kavadist/types"
 )
 
 // Test suite used for all keeper tests

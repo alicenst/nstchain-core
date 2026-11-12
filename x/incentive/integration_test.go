@@ -8,10 +8,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	"github.com/kava-labs/kava/app"
-	cdptypes "github.com/kava-labs/kava/x/cdp/types"
-	"github.com/kava-labs/kava/x/incentive/testutil"
-	pricefeedtypes "github.com/kava-labs/kava/x/pricefeed/types"
+	"github.com/nstchain/nstchain-core/app"
+	cdptypes "github.com/nstchain/nstchain-core/x/cdp/types"
+	"github.com/nstchain/nstchain-core/x/incentive/testutil"
+	pricefeedtypes "github.com/nstchain/nstchain-core/x/pricefeed/types"
 )
 
 // Avoid cluttering test cases with long function names

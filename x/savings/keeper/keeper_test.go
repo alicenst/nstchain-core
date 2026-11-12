@@ -16,9 +16,9 @@ import (
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
 	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/x/savings/keeper"
-	"github.com/kava-labs/kava/x/savings/types"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/x/savings/keeper"
+	"github.com/nstchain/nstchain-core/x/savings/types"
 )
 
 // Test suite used for all keeper tests

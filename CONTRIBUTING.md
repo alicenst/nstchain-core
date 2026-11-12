@@ -7,7 +7,7 @@ Read `docs/GIT_GOVERNANCE.md` before opening a pull request.
 ```bash
 go mod verify
 gofmt -l $(git ls-files '*.go')
-go build ./cmd/kava
+go build ./cmd/nstchain
 go test -count=1 ./app ./client/rest ./x/evmutil ./x/evmutil/migrations/v2
 go vet ./app ./client/rest
 ```

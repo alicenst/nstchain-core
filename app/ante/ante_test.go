@@ -22,9 +22,9 @@ import (
 	evmtypes "github.com/evmos/ethermint/x/evm/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/kava-labs/kava/app"
-	bep3types "github.com/kava-labs/kava/x/bep3/types"
-	pricefeedtypes "github.com/kava-labs/kava/x/pricefeed/types"
+	"github.com/nstchain/nstchain-core/app"
+	bep3types "github.com/nstchain/nstchain-core/x/bep3/types"
+	pricefeedtypes "github.com/nstchain/nstchain-core/x/pricefeed/types"
 )
 
 func TestMain(m *testing.M) {

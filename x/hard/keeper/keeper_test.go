@@ -14,10 +14,10 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	tmtime "github.com/cometbft/cometbft/types/time"
 
-	"github.com/kava-labs/kava/app"
-	auctionkeeper "github.com/kava-labs/kava/x/auction/keeper"
-	"github.com/kava-labs/kava/x/hard/keeper"
-	"github.com/kava-labs/kava/x/hard/types"
+	"github.com/nstchain/nstchain-core/app"
+	auctionkeeper "github.com/nstchain/nstchain-core/x/auction/keeper"
+	"github.com/nstchain/nstchain-core/x/hard/keeper"
+	"github.com/nstchain/nstchain-core/x/hard/types"
 )
 
 // Test suite used for all keeper tests

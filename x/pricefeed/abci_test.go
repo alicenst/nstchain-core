@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/kava-labs/kava/x/pricefeed"
-	"github.com/kava-labs/kava/x/pricefeed/keeper"
-	"github.com/kava-labs/kava/x/pricefeed/testutil"
+	"github.com/nstchain/nstchain-core/x/pricefeed"
+	"github.com/nstchain/nstchain-core/x/pricefeed/keeper"
+	"github.com/nstchain/nstchain-core/x/pricefeed/testutil"
 )
 
 func TestEndBlocker_UpdatesMultipleMarkets(t *testing.T) {

@@ -11,11 +11,11 @@ import (
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/kava-labs/kava/app"
-	earntypes "github.com/kava-labs/kava/x/earn/types"
-	"github.com/kava-labs/kava/x/router/keeper"
-	"github.com/kava-labs/kava/x/router/testutil"
-	"github.com/kava-labs/kava/x/router/types"
+	"github.com/nstchain/nstchain-core/app"
+	earntypes "github.com/nstchain/nstchain-core/x/earn/types"
+	"github.com/nstchain/nstchain-core/x/router/keeper"
+	"github.com/nstchain/nstchain-core/x/router/testutil"
+	"github.com/nstchain/nstchain-core/x/router/types"
 )
 
 type msgServerTestSuite struct {

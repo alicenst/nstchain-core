@@ -10,9 +10,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/staking"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/x/liquid/keeper"
-	"github.com/kava-labs/kava/x/liquid/types"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/x/liquid/keeper"
+	"github.com/nstchain/nstchain-core/x/liquid/types"
 )
 
 type grpcQueryTestSuite struct {

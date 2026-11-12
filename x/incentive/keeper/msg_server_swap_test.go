@@ -9,10 +9,10 @@ import (
 	vestingtypes "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/x/incentive/testutil"
-	"github.com/kava-labs/kava/x/incentive/types"
-	kavadisttypes "github.com/kava-labs/kava/x/kavadist/types"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/x/incentive/testutil"
+	"github.com/nstchain/nstchain-core/x/incentive/types"
+	kavadisttypes "github.com/nstchain/nstchain-core/x/kavadist/types"
 )
 
 const secondsPerDay = 24 * 60 * 60

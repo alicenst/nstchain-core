@@ -4,9 +4,8 @@
 PROJECT_NAME := nstchain # unique namespace for project (was: nstchain)
 
 GO_BIN ?= go
-# Source entry directory under ./cmd/. If you have not renamed cmd/kava -> cmd/nstchain yet,
-# keep CMD=kava. If you already renamed, build with `make build CMD=nstchain`.
-CMD ?= kava
+# Source entry directory under ./cmd/.
+CMD ?= nstchain
 
 GIT_BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
 GIT_COMMIT := $(shell git rev-parse HEAD)
@@ -43,7 +42,7 @@ print-version:
 LEDGER_ENABLED ?= true
 DOCKER:=docker
 DOCKER_BUF := $(DOCKER) run --rm -v $(CURDIR):/workspace --workdir /workspace bufbuild/buf
-HTTPS_GIT := https://github.com/Kava-Labs/kava.git
+HTTPS_GIT := https://github.com/nstchain/nstchain-core.git
 
 ################################################################################
 ###                             Machine Info                                 ###

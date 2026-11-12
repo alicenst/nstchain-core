@@ -7,11 +7,11 @@ import (
 	sdkmath "cosmossdk.io/math"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
-	pricefeedtypes "github.com/kava-labs/kava/x/pricefeed/types"
+	pricefeedtypes "github.com/nstchain/nstchain-core/x/pricefeed/types"
 
-	earntypes "github.com/kava-labs/kava/x/earn/types"
-	"github.com/kava-labs/kava/x/incentive/keeper"
-	"github.com/kava-labs/kava/x/incentive/types"
+	earntypes "github.com/nstchain/nstchain-core/x/earn/types"
+	"github.com/nstchain/nstchain-core/x/incentive/keeper"
+	"github.com/nstchain/nstchain-core/x/incentive/types"
 	"github.com/stretchr/testify/suite"
 )
 

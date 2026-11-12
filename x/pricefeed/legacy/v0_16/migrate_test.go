@@ -8,9 +8,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/suite"
 
-	app "github.com/kava-labs/kava/app"
-	v015pricefeed "github.com/kava-labs/kava/x/pricefeed/legacy/v0_15"
-	v016pricefeed "github.com/kava-labs/kava/x/pricefeed/types"
+	app "github.com/nstchain/nstchain-core/app"
+	v015pricefeed "github.com/nstchain/nstchain-core/x/pricefeed/legacy/v0_15"
+	v016pricefeed "github.com/nstchain/nstchain-core/x/pricefeed/types"
 )
 
 type migrateTestSuite struct {

@@ -5,7 +5,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/x/liquid/types"
+	"github.com/nstchain/nstchain-core/x/liquid/types"
 )
 
 func (k Keeper) CollectStakingRewards(

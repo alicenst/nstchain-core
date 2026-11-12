@@ -6,8 +6,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/server"
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/cmd/kava/cmd"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/cmd/nstchain/cmd"
 )
 
 func main() {

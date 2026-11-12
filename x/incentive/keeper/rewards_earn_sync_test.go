@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	earntypes "github.com/kava-labs/kava/x/earn/types"
-	"github.com/kava-labs/kava/x/incentive/types"
+	earntypes "github.com/nstchain/nstchain-core/x/earn/types"
+	"github.com/nstchain/nstchain-core/x/incentive/types"
 )
 
 // SynchronizeEarnRewardTests runs unit tests for the keeper.SynchronizeEarnReward method

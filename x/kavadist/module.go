@@ -16,9 +16,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 
-	"github.com/kava-labs/kava/x/kavadist/client/cli"
-	"github.com/kava-labs/kava/x/kavadist/keeper"
-	"github.com/kava-labs/kava/x/kavadist/types"
+	"github.com/nstchain/nstchain-core/x/kavadist/client/cli"
+	"github.com/nstchain/nstchain-core/x/kavadist/keeper"
+	"github.com/nstchain/nstchain-core/x/kavadist/types"
 )
 
 var (

@@ -13,9 +13,9 @@ import (
 	vesting "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
 	evmtypes "github.com/evmos/ethermint/x/evm/types"
 
-	"github.com/kava-labs/kava/x/evmutil/keeper"
-	"github.com/kava-labs/kava/x/evmutil/testutil"
-	"github.com/kava-labs/kava/x/evmutil/types"
+	"github.com/nstchain/nstchain-core/x/evmutil/keeper"
+	"github.com/nstchain/nstchain-core/x/evmutil/testutil"
+	"github.com/nstchain/nstchain-core/x/evmutil/types"
 )
 
 type evmBankKeeperTestSuite struct {

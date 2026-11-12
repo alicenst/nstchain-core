@@ -3,7 +3,7 @@ package grpc_test
 import (
 	"testing"
 
-	"github.com/kava-labs/kava/client/grpc"
+	"github.com/nstchain/nstchain-core/client/grpc"
 	"github.com/stretchr/testify/require"
 )
 

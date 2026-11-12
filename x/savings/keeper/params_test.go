@@ -1,7 +1,7 @@
 package keeper_test
 
 import (
-	"github.com/kava-labs/kava/x/savings/types"
+	"github.com/nstchain/nstchain-core/x/savings/types"
 )
 
 func (suite *KeeperTestSuite) TestGetSetParams() {

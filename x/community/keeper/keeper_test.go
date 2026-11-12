@@ -12,9 +12,9 @@ import (
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/kava-labs/kava/x/community/keeper"
-	"github.com/kava-labs/kava/x/community/testutil"
-	"github.com/kava-labs/kava/x/community/types"
+	"github.com/nstchain/nstchain-core/x/community/keeper"
+	"github.com/nstchain/nstchain-core/x/community/testutil"
+	"github.com/nstchain/nstchain-core/x/community/types"
 )
 
 // Test suite used for all keeper tests

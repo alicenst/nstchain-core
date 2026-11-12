@@ -9,7 +9,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	"github.com/kava-labs/kava/x/issuance/types"
+	"github.com/nstchain/nstchain-core/x/issuance/types"
 )
 
 // Keeper keeper for the issuance module

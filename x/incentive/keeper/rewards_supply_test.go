@@ -10,16 +10,16 @@ import (
 	proposaltypes "github.com/cosmos/cosmos-sdk/x/params/types/proposal"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/x/committee"
-	committeekeeper "github.com/kava-labs/kava/x/committee/keeper"
-	committeetypes "github.com/kava-labs/kava/x/committee/types"
-	"github.com/kava-labs/kava/x/hard"
-	hardkeeper "github.com/kava-labs/kava/x/hard/keeper"
-	"github.com/kava-labs/kava/x/incentive/keeper"
-	"github.com/kava-labs/kava/x/incentive/testutil"
-	"github.com/kava-labs/kava/x/incentive/types"
-	kavadisttypes "github.com/kava-labs/kava/x/kavadist/types"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/x/committee"
+	committeekeeper "github.com/nstchain/nstchain-core/x/committee/keeper"
+	committeetypes "github.com/nstchain/nstchain-core/x/committee/types"
+	"github.com/nstchain/nstchain-core/x/hard"
+	hardkeeper "github.com/nstchain/nstchain-core/x/hard/keeper"
+	"github.com/nstchain/nstchain-core/x/incentive/keeper"
+	"github.com/nstchain/nstchain-core/x/incentive/testutil"
+	"github.com/nstchain/nstchain-core/x/incentive/types"
+	kavadisttypes "github.com/nstchain/nstchain-core/x/kavadist/types"
 )
 
 type SupplyIntegrationTests struct {

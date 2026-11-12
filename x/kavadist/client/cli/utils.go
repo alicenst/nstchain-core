@@ -5,7 +5,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/codec"
 
-	"github.com/kava-labs/kava/x/kavadist/types"
+	"github.com/nstchain/nstchain-core/x/kavadist/types"
 )
 
 // ParseCommunityPoolMultiSpendProposalJSON reads and parses a CommunityPoolMultiSpendProposalJSON from a file.

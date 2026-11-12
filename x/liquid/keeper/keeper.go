@@ -7,7 +7,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/x/liquid/types"
+	"github.com/nstchain/nstchain-core/x/liquid/types"
 )
 
 // Keeper struct for the liquid module.

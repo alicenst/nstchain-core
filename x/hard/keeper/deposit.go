@@ -8,7 +8,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/kava-labs/kava/x/hard/types"
+	"github.com/nstchain/nstchain-core/x/hard/types"
 )
 
 // Deposit deposit

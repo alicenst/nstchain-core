@@ -8,10 +8,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/kava-labs/kava/app"
-	earntypes "github.com/kava-labs/kava/x/earn/types"
-	"github.com/kava-labs/kava/x/incentive/testutil"
-	"github.com/kava-labs/kava/x/incentive/types"
+	"github.com/nstchain/nstchain-core/app"
+	earntypes "github.com/nstchain/nstchain-core/x/earn/types"
+	"github.com/nstchain/nstchain-core/x/incentive/testutil"
+	"github.com/nstchain/nstchain-core/x/incentive/types"
 )
 
 type AccumulateEarnRewardsIntegrationTests struct {

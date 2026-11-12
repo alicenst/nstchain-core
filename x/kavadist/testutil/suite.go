@@ -16,9 +16,9 @@ import (
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/x/kavadist/keeper"
-	"github.com/kava-labs/kava/x/kavadist/types"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/x/kavadist/keeper"
+	"github.com/nstchain/nstchain-core/x/kavadist/types"
 )
 
 // Suite implements a test suite for the kavadist module integration tests

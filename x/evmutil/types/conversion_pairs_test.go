@@ -3,8 +3,8 @@ package types_test
 import (
 	"testing"
 
-	"github.com/kava-labs/kava/x/evmutil/testutil"
-	"github.com/kava-labs/kava/x/evmutil/types"
+	"github.com/nstchain/nstchain-core/x/evmutil/testutil"
+	"github.com/nstchain/nstchain-core/x/evmutil/types"
 	"github.com/stretchr/testify/require"
 )
 

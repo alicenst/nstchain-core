@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/x/savings/keeper"
-	"github.com/kava-labs/kava/x/savings/types"
+	"github.com/nstchain/nstchain-core/x/savings/keeper"
+	"github.com/nstchain/nstchain-core/x/savings/types"
 )
 
 // InitGenesis initializes genesis state

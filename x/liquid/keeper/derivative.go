@@ -7,7 +7,7 @@ import (
 	sdkmath "cosmossdk.io/math"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/x/liquid/types"
+	"github.com/nstchain/nstchain-core/x/liquid/types"
 )
 
 // MintDerivative removes a user's staking delegation and mints them equivalent staking derivative coins.

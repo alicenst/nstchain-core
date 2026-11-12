@@ -6,7 +6,7 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/kava-labs/kava/x/validator-vesting/types"
+	"github.com/nstchain/nstchain-core/x/validator-vesting/types"
 )
 
 type queryServer struct {

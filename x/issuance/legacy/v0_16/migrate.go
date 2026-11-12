@@ -1,8 +1,8 @@
 package v0_16
 
 import (
-	v015issuance "github.com/kava-labs/kava/x/issuance/legacy/v0_15"
-	v016issuance "github.com/kava-labs/kava/x/issuance/types"
+	v015issuance "github.com/nstchain/nstchain-core/x/issuance/legacy/v0_15"
+	v016issuance "github.com/nstchain/nstchain-core/x/issuance/types"
 )
 
 func migrateParams(params v015issuance.Params) v016issuance.Params {

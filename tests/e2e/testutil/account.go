@@ -26,8 +26,8 @@ import (
 	emtests "github.com/evmos/ethermint/tests"
 	emtypes "github.com/evmos/ethermint/types"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/tests/util"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/tests/util"
 )
 
 // SigningAccount wraps details about an account and its private keys.

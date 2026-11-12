@@ -18,11 +18,11 @@ import (
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/kava-labs/kava/app"
-	earnkeeper "github.com/kava-labs/kava/x/earn/keeper"
-	earntypes "github.com/kava-labs/kava/x/earn/types"
-	"github.com/kava-labs/kava/x/router/keeper"
-	savingstypes "github.com/kava-labs/kava/x/savings/types"
+	"github.com/nstchain/nstchain-core/app"
+	earnkeeper "github.com/nstchain/nstchain-core/x/earn/keeper"
+	earntypes "github.com/nstchain/nstchain-core/x/earn/types"
+	"github.com/nstchain/nstchain-core/x/router/keeper"
+	savingstypes "github.com/nstchain/nstchain-core/x/savings/types"
 )
 
 // Test suite used for all keeper tests

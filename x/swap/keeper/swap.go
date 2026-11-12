@@ -3,7 +3,7 @@ package keeper
 import (
 	"fmt"
 
-	"github.com/kava-labs/kava/x/swap/types"
+	"github.com/nstchain/nstchain-core/x/swap/types"
 
 	errorsmod "cosmossdk.io/errors"
 	sdk "github.com/cosmos/cosmos-sdk/types"

@@ -12,7 +12,7 @@ import (
 	paramsproposal "github.com/cosmos/cosmos-sdk/x/params/types/proposal"
 	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
 	proto "github.com/cosmos/gogoproto/proto"
-	communitytypes "github.com/kava-labs/kava/x/community/types"
+	communitytypes "github.com/nstchain/nstchain-core/x/community/types"
 )
 
 // Permission is anything with a method that validates whether a proposal is allowed by it or not.

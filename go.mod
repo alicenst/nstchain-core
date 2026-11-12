@@ -1,4 +1,4 @@
-module github.com/kava-labs/kava
+module github.com/nstchain/nstchain-core
 
 go 1.22.7
 

@@ -7,8 +7,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/x/earn/types"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/x/earn/types"
 )
 
 func TestVaultRecordValidate(t *testing.T) {

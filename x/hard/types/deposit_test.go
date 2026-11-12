@@ -6,7 +6,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/kava-labs/kava/x/hard/types"
+	"github.com/nstchain/nstchain-core/x/hard/types"
 )
 
 func TestDeposit_NormalizedDeposit(t *testing.T) {

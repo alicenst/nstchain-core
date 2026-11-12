@@ -12,9 +12,9 @@ import (
 
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/kava-labs/kava/tests/e2e/testutil"
-	"github.com/kava-labs/kava/tests/util"
-	evmutiltypes "github.com/kava-labs/kava/x/evmutil/types"
+	"github.com/nstchain/nstchain-core/tests/e2e/testutil"
+	"github.com/nstchain/nstchain-core/tests/util"
+	evmutiltypes "github.com/nstchain/nstchain-core/x/evmutil/types"
 )
 
 const initialCosmosCoinConversionDenomFunds = int64(1e4)

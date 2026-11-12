@@ -10,8 +10,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/version"
-	"github.com/kava-labs/kava/x/committee/client/common"
-	"github.com/kava-labs/kava/x/committee/types"
+	"github.com/nstchain/nstchain-core/x/committee/client/common"
+	"github.com/nstchain/nstchain-core/x/committee/types"
 )
 
 // GetQueryCmd returns the cli query commands for this module

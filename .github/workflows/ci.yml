@@ -40,7 +40,7 @@ jobs:
 
       - name: Build linux/amd64 daemon
         run: |
-          make build-linux CMD=kava
+          make build-linux
           ./out/linux/nstchain version --long
 
       - name: Run unit smoke tests

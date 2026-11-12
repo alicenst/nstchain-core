@@ -10,12 +10,12 @@ import (
 	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 
-	"github.com/kava-labs/kava/app"
-	cdptypes "github.com/kava-labs/kava/x/cdp/types"
-	evmutiltypes "github.com/kava-labs/kava/x/evmutil/types"
+	"github.com/nstchain/nstchain-core/app"
+	cdptypes "github.com/nstchain/nstchain-core/x/cdp/types"
+	evmutiltypes "github.com/nstchain/nstchain-core/x/evmutil/types"
 
-	"github.com/kava-labs/kava/tests/e2e/contracts/greeter"
-	"github.com/kava-labs/kava/tests/util"
+	"github.com/nstchain/nstchain-core/tests/e2e/contracts/greeter"
+	"github.com/nstchain/nstchain-core/tests/util"
 )
 
 func (suite *IntegrationTestSuite) TestEthCallToGreeterContract() {

@@ -26,10 +26,10 @@ import (
 	"github.com/spf13/viper"
 
 	"github.com/Kava-Labs/opendb"
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/app/params"
-	"github.com/kava-labs/kava/cmd/kava/cmd/iavlviewer"
-	"github.com/kava-labs/kava/cmd/kava/cmd/rocksdb"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/app/params"
+	"github.com/nstchain/nstchain-core/cmd/nstchain/cmd/iavlviewer"
+	"github.com/nstchain/nstchain-core/cmd/nstchain/cmd/rocksdb"
 )
 
 // EnvPrefix is the prefix environment variables must have to configure the app.

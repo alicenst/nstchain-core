@@ -12,9 +12,9 @@ import (
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/spf13/cobra"
 
-	"github.com/kava-labs/kava/x/router/client/cli"
-	"github.com/kava-labs/kava/x/router/keeper"
-	"github.com/kava-labs/kava/x/router/types"
+	"github.com/nstchain/nstchain-core/x/router/client/cli"
+	"github.com/nstchain/nstchain-core/x/router/keeper"
+	"github.com/nstchain/nstchain-core/x/router/types"
 )
 
 var (

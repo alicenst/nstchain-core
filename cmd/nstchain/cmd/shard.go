@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/kava-labs/kava/app"
+	"github.com/nstchain/nstchain-core/app"
 	"github.com/spf13/cobra"
 
 	dbm "github.com/cometbft/cometbft-db"

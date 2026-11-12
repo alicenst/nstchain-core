@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/x/earn/types"
+	"github.com/nstchain/nstchain-core/x/earn/types"
 )
 
 // Implements EarnHooks interface

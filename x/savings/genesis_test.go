@@ -11,10 +11,10 @@ import (
 	tmtime "github.com/cometbft/cometbft/types/time"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/x/savings"
-	"github.com/kava-labs/kava/x/savings/keeper"
-	"github.com/kava-labs/kava/x/savings/types"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/x/savings"
+	"github.com/nstchain/nstchain-core/x/savings/keeper"
+	"github.com/nstchain/nstchain-core/x/savings/types"
 )
 
 type GenesisTestSuite struct {

@@ -18,10 +18,10 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	tmtime "github.com/cometbft/cometbft/types/time"
 
-	"github.com/kava-labs/kava/app"
-	auctiontypes "github.com/kava-labs/kava/x/auction/types"
-	"github.com/kava-labs/kava/x/cdp/keeper"
-	"github.com/kava-labs/kava/x/cdp/types"
+	"github.com/nstchain/nstchain-core/app"
+	auctiontypes "github.com/nstchain/nstchain-core/x/auction/types"
+	"github.com/nstchain/nstchain-core/x/cdp/keeper"
+	"github.com/nstchain/nstchain-core/x/cdp/types"
 )
 
 type SeizeTestSuite struct {

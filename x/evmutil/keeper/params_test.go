@@ -7,9 +7,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/x/evmutil/keeper"
-	"github.com/kava-labs/kava/x/evmutil/testutil"
-	"github.com/kava-labs/kava/x/evmutil/types"
+	"github.com/nstchain/nstchain-core/x/evmutil/keeper"
+	"github.com/nstchain/nstchain-core/x/evmutil/testutil"
+	"github.com/nstchain/nstchain-core/x/evmutil/types"
 )
 
 type ParamsTestSuite struct {

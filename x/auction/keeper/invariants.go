@@ -7,7 +7,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	"github.com/kava-labs/kava/x/auction/types"
+	"github.com/nstchain/nstchain-core/x/auction/types"
 )
 
 // RegisterInvariants registers all staking invariants

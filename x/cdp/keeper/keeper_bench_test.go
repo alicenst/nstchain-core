@@ -10,9 +10,9 @@ import (
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	tmtime "github.com/cometbft/cometbft/types/time"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/x/cdp/keeper"
-	"github.com/kava-labs/kava/x/cdp/types"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/x/cdp/keeper"
+	"github.com/nstchain/nstchain-core/x/cdp/types"
 )
 
 // saving the result to a module level variable ensures the compiler doesn't optimize the test away

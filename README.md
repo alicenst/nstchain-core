@@ -50,7 +50,7 @@ nstchain is a decentralized finance (DeFi) blockchain platform built on the Cosm
 git clone git@github.com:alicenst/nstchain-core.git
 cd nstchain
 
-# 安装（默认安装 ./cmd/kava 可执行文件，名称为 nstchain）
+# 安装（默认安装 ./cmd/nstchain 可执行文件，名称为 nstchain）
 make install
 
 # 验证安装

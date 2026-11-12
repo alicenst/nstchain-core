@@ -7,7 +7,7 @@ import (
 	sdkmath "cosmossdk.io/math"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/x/kavadist/types"
+	"github.com/nstchain/nstchain-core/x/kavadist/types"
 )
 
 func (suite *keeperTestSuite) TestGRPCParams() {

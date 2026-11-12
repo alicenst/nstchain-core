@@ -11,8 +11,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/app/ante"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/app/ante"
 )
 
 func mustParseDecCoins(value string) sdk.DecCoins {

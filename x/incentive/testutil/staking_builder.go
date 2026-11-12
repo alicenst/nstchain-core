@@ -2,7 +2,7 @@ package testutil
 
 import (
 	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/kava-labs/kava/app"
+	"github.com/nstchain/nstchain-core/app"
 
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 )

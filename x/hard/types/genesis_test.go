@@ -10,7 +10,7 @@ import (
 	sdkmath "cosmossdk.io/math"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/x/hard/types"
+	"github.com/nstchain/nstchain-core/x/hard/types"
 )
 
 const (

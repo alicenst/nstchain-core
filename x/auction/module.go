@@ -15,9 +15,9 @@ import (
 
 	abci "github.com/cometbft/cometbft/abci/types"
 
-	"github.com/kava-labs/kava/x/auction/client/cli"
-	"github.com/kava-labs/kava/x/auction/keeper"
-	"github.com/kava-labs/kava/x/auction/types"
+	"github.com/nstchain/nstchain-core/x/auction/client/cli"
+	"github.com/nstchain/nstchain-core/x/auction/keeper"
+	"github.com/nstchain/nstchain-core/x/auction/types"
 )
 
 var (

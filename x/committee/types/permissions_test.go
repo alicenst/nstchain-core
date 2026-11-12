@@ -10,8 +10,8 @@ import (
 	govv1beta1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
 	paramsproposal "github.com/cosmos/cosmos-sdk/x/params/types/proposal"
 
-	"github.com/kava-labs/kava/x/committee/types"
-	communitytypes "github.com/kava-labs/kava/x/community/types"
+	"github.com/nstchain/nstchain-core/x/committee/types"
+	communitytypes "github.com/nstchain/nstchain-core/x/community/types"
 )
 
 func TestPackPermissions_Success(t *testing.T) {

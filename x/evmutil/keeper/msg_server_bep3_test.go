@@ -4,8 +4,8 @@ import (
 	sdkmath "cosmossdk.io/math"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/x/evmutil/testutil"
-	"github.com/kava-labs/kava/x/evmutil/types"
+	"github.com/nstchain/nstchain-core/x/evmutil/testutil"
+	"github.com/nstchain/nstchain-core/x/evmutil/types"
 )
 
 func (suite *MsgServerSuite) TestConvertCoinToERC20_Bep3() {

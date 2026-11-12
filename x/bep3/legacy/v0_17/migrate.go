@@ -3,7 +3,7 @@ package v0_16
 import (
 	"fmt"
 
-	"github.com/kava-labs/kava/x/bep3/types"
+	"github.com/nstchain/nstchain-core/x/bep3/types"
 )
 
 // resetSwapForZeroHeight updates swap expiry/close heights to work when the chain height is reset to zero.

@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/kava-labs/kava/x/kavadist/testutil"
+	"github.com/nstchain/nstchain-core/x/kavadist/testutil"
 )
 
 type keeperTestSuite struct {

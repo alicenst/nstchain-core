@@ -19,7 +19,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap/zaptest"
 
-	kavainterchain "github.com/kava-labs/kava/tests/interchain"
+	kavainterchain "github.com/nstchain/nstchain-core/tests/interchain"
 )
 
 func TestInterchainIBC(t *testing.T) {

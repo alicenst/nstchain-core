@@ -6,7 +6,7 @@ import (
 	authcmd "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
 	"github.com/spf13/cobra"
 
-	"github.com/kava-labs/kava/app"
+	"github.com/nstchain/nstchain-core/app"
 )
 
 // newTxCmd creates all commands for submitting blockchain transactions.

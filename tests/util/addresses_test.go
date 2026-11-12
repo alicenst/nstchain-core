@@ -8,8 +8,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/tests/util"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/tests/util"
 )
 
 func TestAddressConversion(t *testing.T) {

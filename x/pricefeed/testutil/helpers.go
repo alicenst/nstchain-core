@@ -9,9 +9,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/x/pricefeed/keeper"
-	"github.com/kava-labs/kava/x/pricefeed/types"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/x/pricefeed/keeper"
+	"github.com/nstchain/nstchain-core/x/pricefeed/types"
 )
 
 func SetCurrentPrices_PriceCalculations(t *testing.T, f func(ctx sdk.Context, keeper keeper.Keeper)) {

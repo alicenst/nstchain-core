@@ -3,7 +3,7 @@ package client
 import (
 	govclient "github.com/cosmos/cosmos-sdk/x/gov/client"
 
-	"github.com/kava-labs/kava/x/earn/client/cli"
+	"github.com/nstchain/nstchain-core/x/earn/client/cli"
 )
 
 // community-pool deposit/withdraw proposal handlers

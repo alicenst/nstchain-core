@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	types "github.com/kava-labs/kava/x/swap/types"
+	types "github.com/nstchain/nstchain-core/x/swap/types"
 
 	sdkmath "cosmossdk.io/math"
 	sdk "github.com/cosmos/cosmos-sdk/types"

@@ -7,9 +7,9 @@ import (
 
 	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
 	tmtime "github.com/cometbft/cometbft/types/time"
-	"github.com/kava-labs/kava/x/swap/keeper"
-	"github.com/kava-labs/kava/x/swap/testutil"
-	"github.com/kava-labs/kava/x/swap/types"
+	"github.com/nstchain/nstchain-core/x/swap/keeper"
+	"github.com/nstchain/nstchain-core/x/swap/testutil"
+	"github.com/nstchain/nstchain-core/x/swap/types"
 	"github.com/stretchr/testify/suite"
 
 	sdkmath "cosmossdk.io/math"

@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/kava-labs/kava/x/swap/keeper"
-	"github.com/kava-labs/kava/x/swap/types"
+	"github.com/nstchain/nstchain-core/x/swap/keeper"
+	"github.com/nstchain/nstchain-core/x/swap/types"
 )
 
 // InitGenesis initializes story state from genesis file

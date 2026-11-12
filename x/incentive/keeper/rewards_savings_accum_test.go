@@ -8,13 +8,13 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/suite"
 
-	savingskeeper "github.com/kava-labs/kava/x/savings/keeper"
-	savingstypes "github.com/kava-labs/kava/x/savings/types"
+	savingskeeper "github.com/nstchain/nstchain-core/x/savings/keeper"
+	savingstypes "github.com/nstchain/nstchain-core/x/savings/types"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/x/incentive/keeper"
-	"github.com/kava-labs/kava/x/incentive/testutil"
-	"github.com/kava-labs/kava/x/incentive/types"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/x/incentive/keeper"
+	"github.com/nstchain/nstchain-core/x/incentive/testutil"
+	"github.com/nstchain/nstchain-core/x/incentive/types"
 )
 
 // Test suite used for all keeper tests

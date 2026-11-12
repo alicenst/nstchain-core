@@ -7,7 +7,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	earntypes "github.com/kava-labs/kava/x/earn/types"
+	earntypes "github.com/nstchain/nstchain-core/x/earn/types"
 )
 
 type StakingKeeper interface {

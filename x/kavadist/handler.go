@@ -6,8 +6,8 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	govv1beta1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
 
-	"github.com/kava-labs/kava/x/kavadist/keeper"
-	"github.com/kava-labs/kava/x/kavadist/types"
+	"github.com/nstchain/nstchain-core/x/kavadist/keeper"
+	"github.com/nstchain/nstchain-core/x/kavadist/types"
 )
 
 // NewCommunityPoolMultiSpendProposalHandler

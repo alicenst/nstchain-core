@@ -11,10 +11,10 @@ import (
 
 	tmprototypes "github.com/cometbft/cometbft/proto/tendermint/types"
 
-	"github.com/kava-labs/kava/app"
-	"github.com/kava-labs/kava/x/pricefeed/keeper"
-	"github.com/kava-labs/kava/x/pricefeed/testutil"
-	"github.com/kava-labs/kava/x/pricefeed/types"
+	"github.com/nstchain/nstchain-core/app"
+	"github.com/nstchain/nstchain-core/x/pricefeed/keeper"
+	"github.com/nstchain/nstchain-core/x/pricefeed/testutil"
+	"github.com/nstchain/nstchain-core/x/pricefeed/types"
 )
 
 // TestKeeper_SetGetMarket tests adding markets to the pricefeed, getting markets from the store

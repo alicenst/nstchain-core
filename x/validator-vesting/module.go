@@ -15,9 +15,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 
-	"github.com/kava-labs/kava/x/validator-vesting/client/cli"
-	"github.com/kava-labs/kava/x/validator-vesting/keeper"
-	"github.com/kava-labs/kava/x/validator-vesting/types"
+	"github.com/nstchain/nstchain-core/x/validator-vesting/client/cli"
+	"github.com/nstchain/nstchain-core/x/validator-vesting/keeper"
+	"github.com/nstchain/nstchain-core/x/validator-vesting/types"
 )
 
 var (
